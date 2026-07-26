@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青少年 AI Agent 实战训练营 - 课程总览与资料宝典</title>
+    <meta name="description" content="面向10-18岁青少年的AI Agent实战课程，涵盖个人网站制作、NotebookLM+Gemini PPT生成、云端Hermes Agent微信控制及全套学生Prompt资料宝典。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">AI Agent <span>创客营</span></span>
+            </div>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#overview" class="nav-link active">项目总览</a>
+                <a href="#synopsis" class="nav-link">课程梗概</a>
+                <a href="#resources" class="nav-link">课程资料 & Prompt 宝典</a>
+                <a href="#template" class="nav-link">初始脚手架</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="切换主题">
+                    <span class="icon">☀️</span>
+                    <span class="label">浅色模式</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero 英雄 Banner -->
+    <section class="hero-section">
+        <div class="hero-bg-glow"></div>
+        <div class="container">
+            <div class="hero-badge">🚀 青少年人工智能工程实战课</div>
+            <h1 class="hero-title">从个人网站到<span>微信云端 Agent</span></h1>
+            <p class="hero-subtitle">告别纯理论与聊天框！做自己的 AI 首席指挥官，用 5 节课构建全栈网页、精美 PPT 与云端微信智能体。</p>
+
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-num">5 节</div>
+                    <div class="stat-label">硬核实战大课</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">3 大</div>
+                    <div class="stat-label">终极交付成果</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">15+</div>
+                    <div class="stat-label">开箱即用 Prompt</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">100%</div>
+                    <div class="stat-label">工程安全防线</div>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#resources" class="btn btn-primary">📖 浏览学生 Prompt 宝典</a>
+                <a href="#synopsis" class="btn btn-secondary">🗓️ 查看 5 节课梗概</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. 项目总体介绍 -->
+    <section id="overview" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🌟 项目总体介绍</h2>
+                <p class="section-desc">培养真正的“AI 首席指挥官”思维与工程落地能力</p>
+            </div>
+
+            <div class="intro-grid">
+                <div class="intro-card main-concept">
+                    <div class="card-icon">👑</div>
+                    <h3>核心理念：身份重塑</h3>
+                    <p>我们不逼迫孩子死记硬背枯燥的语法代码，而是将学生定位为<strong>“AI 首席指挥官”</strong>。重点培养需求精准表达（Prompt）、上下文拆解（Context）、以及结果验证与排错能力（Testing & Audit）。</p>
+                </div>
+
+                <div class="intro-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>成果导向</h3>
+                    <p>每节课均有清晰可验证的交付物，拒绝无反馈的聊天体验，真正做到“听懂、做出来、能分享”。</p>
+                </div>
+
+                <div class="intro-card">
+                    <div class="card-icon">🔗</div>
+                    <h3>全栈打通</h3>
+                    <p>融合 HTML/CSS/JS + Git/GitHub + NotebookLM/Gemini + 云服务器 SSH + 微信 Agent 控制。</p>
+                </div>
+
+                <div class="intro-card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>安全防线</h3>
+                    <p>将敏感密钥隔离、最小权限原则与发布安全审查贯穿始终，树立正确的数字公民与安全素养。</p>
+                </div>
+            </div>
+
+            <!-- 三大成果展示 -->
+            <div class="deliverables-title">🏆 课程三大终极交付成果</div>
+            <div class="deliverables-grid">
+                <div class="deliverable-card">
+                    <div class="del-badge">成果 1</div>
+                    <div class="del-icon">🌐</div>
+                    <h3>现代响应式个人网站</h3>
+                    <p>具备渐变阴影、深色模式切换、手机移动端适配及公网可分享链接。</p>
+                </div>
+
+                <div class="deliverable-card">
+                    <div class="del-badge">成果 2</div>
+                    <div class="del-icon">📊</div>
+                    <h3>高质量视觉 PPT 与讲稿</h3>
+                    <p>NotebookLM 提炼结构大纲，Gemini Nano Banana 生成统一矢量图，附带演练演讲备注。</p>
+                </div>
+
+                <div class="deliverable-card">
+                    <div class="del-badge">成果 3</div>
+                    <div class="del-icon">💬</div>
+                    <h3>微信远程云端 Hermes Agent</h3>
+                    <p>部署于云端 SSH 沙盒隔离环境，随时通过手机微信发消息控制并更新网站。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 课程梗概 -->
+    <section id="synopsis" class="section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📅 五节课内容梗概</h2>
+                <p class="section-desc">单次 2.5~3 小时（150~180 分钟）周末训练营沉浸式进阶路线</p>
+            </div>
+
+            <div class="timeline">
+                <!-- Lesson 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">第 1 课</div>
+                    <div class="timeline-content">
+                        <div class="lesson-header">
+                            <h3>从大模型、GitHub 到第一个网页</h3>
+                            <span class="duration-badge">⏱️ 180 分钟</span>
+                        </div>
+                        <p class="lesson-desc">建立 AI Agent 技术地图，完成 Google 与 GitHub 安全打卡，与 Antigravity Agent 协作生成第一个个人主题网页并完成 Git 云端存档。</p>
+                        <div class="lesson-tags">
+                            <span class="tag">AI Agent 认知</span>
+                            <span class="tag">GitHub 注册打卡</span>
+                            <span class="tag">HTML/CSS/JS 三剑客</span>
+                            <span class="tag">Git Commit</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lesson 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">第 2 课</div>
+                    <div class="timeline-content">
+                        <div class="lesson-header">
+                            <h3>把网页做成作品</h3>
+                            <span class="duration-badge">⏱️ 150 分钟</span>
+                        </div>
+                        <p class="lesson-desc">掌握“区域重构”Prompt，为网页加入悬浮上升阴影、深色/浅色模式动态切换，完成手机端移动视图适配与静态托管上线。</p>
+                        <div class="lesson-tags">
+                            <span class="tag">区域美化 Prompt</span>
+                            <span class="tag">深色模式交互</span>
+                            <span class="tag">移动端响应式</span>
+                            <span class="tag">公网分享</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lesson 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">第 3 课</div>
+                    <div class="timeline-content">
+                        <div class="lesson-header">
+                            <h3>从主题到高质量 PPT</h3>
+                            <span class="duration-badge">⏱️ 150 分钟</span>
+                        </div>
+                        <p class="lesson-desc">使用 NotebookLM 解析网页项目提炼 6 页观点大纲，使用 Gemini Nano Banana 生成风格统一的矢量画风插画，撰写演讲者备注并进行同桌试讲。</p>
+                        <div class="lesson-tags">
+                            <span class="tag">NotebookLM 解析</span>
+                            <span class="tag">Nano Banana 插画</span>
+                            <span class="tag">一页一观点</span>
+                            <span class="tag">演讲者备注</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lesson 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">第 4 课</div>
+                    <div class="timeline-content">
+                        <div class="lesson-header">
+                            <h3>云端 Hermes Agent 与微信控制</h3>
+                            <span class="duration-badge">⏱️ 180 分钟</span>
+                        </div>
+                        <p class="lesson-desc">理解云服务器与 SSH 沙盒隔离机制，安全绑定手机微信与 Hermes Agent，在手机微信中下发指令远程更新云端网站内容。</p>
+                        <div class="lesson-tags">
+                            <span class="tag">云服务器 SSH</span>
+                            <span class="tag">沙盒隔离</span>
+                            <span class="tag">微信绑定 Bridge</span>
+                            <span class="tag">远程操控网页</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lesson 5 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">第 5 课</div>
+                    <div class="timeline-content">
+                        <div class="lesson-header">
+                            <h3>发布、维护与作品展 (Demo Day)</h3>
+                            <span class="duration-badge">⏱️ 150 分钟</span>
+                        </div>
+                        <p class="lesson-desc">完成发布前安全与隐私盘点，体验微信自动化维护巡检流水线，进行 3 分钟 Demo Day 答辩与展演，领取结业证书。</p>
+                        <div class="lesson-tags">
+                            <span class="tag">安全隐私审查</span>
+                            <span class="tag">微信自动健康巡检</span>
+                            <span class="tag">3分钟 Demo 答辩</span>
+                            <span class="tag">结业勋章</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 课程资料与 Prompt 宝典 -->
+    <section id="resources" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📚 每课学生资料 & Prompt 宝典</h2>
+                <p class="section-desc">学生上课必备的实操任务单、提示词填空框与通关 Checkpoint</p>
+            </div>
+
+            <!-- Tab 选项卡导航 -->
+            <div class="tab-nav">
+                <button class="tab-btn active" onclick="openLessonTab(event, 'lesson1')">第 1 课资料</button>
+                <button class="tab-btn" onclick="openLessonTab(event, 'lesson2')">第 2 课资料</button>
+                <button class="tab-btn" onclick="openLessonTab(event, 'lesson3')">第 3 课资料</button>
+                <button class="tab-btn" onclick="openLessonTab(event, 'lesson4')">第 4 课资料</button>
+                <button class="tab-btn" onclick="openLessonTab(event, 'lesson5')">第 5 课资料</button>
+            </div>
+
+            <!-- Tab 1: 第1课资料 -->
+            <div id="lesson1" class="tab-content active">
+                <div class="resource-card">
+                    <div class="res-header">
+                        <h3>📋 第 1 课：第一个网页初始化提示词卡片</h3>
+                        <span class="badge badge-blue">开箱即用 Prompt</span>
+                    </div>
+                    <p class="res-desc">复制下方框内提示词，修改 <code>【 】</code> 内的主题与文字，发送给 Antigravity Agent：</p>
+                    
+                    <div class="prompt-box">
+                        <pre><code>请帮我把当前网页改造成一个以【我的世界探险日志】为主题的网页。
+要求：
+1. 修改 header 区域的大标题为【我的世界探险日志】；
+2. 在副标题写上一句介绍："【记录我的每一个建筑与红石机械】"；
+3. 将主按钮文本改成【查看我的作品】；
+4. 保持页面整体样式美观，不要删除现有的 style.css 链接。</code></pre>
+                        <button class="copy-btn" onclick="copyCode(this)">📋 复制 Prompt</button>
+                    </div>
+
+                    <div class="checkpoint-box">
+                        <h4>🔍 指挥官自查 Checkpoint：</h4>
+                        <ul>
+                            <li>✅ 点击预览是否看到标题正确变成了你的自定义主题？</li>
+                            <li>✅ 页面上的按钮点击是否有响应弹窗？</li>
+                            <li>✅ Git 界面输入 Commit 信息：<code>feat: 完成我的第一个个人网页 V1.0</code> 并 Push 存档。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: 第2课资料 -->
+            <div id="lesson2" class="tab-content">
+                <div class="resource-card">
+                    <div class="res-header">
+                        <h3>🎨 第 2 课：区域样式重构与深色模式 Prompt</h3>
+                        <span class="badge badge-purple">进阶交互 Prompt</span>
+                    </div>
+
+                    <h4>提示词 1：区域视觉重构（限制只改 CSS，防止误删 HTML）</h4>
+                    <div class="prompt-box">
+                        <pre><code>请只修改 `style.css` 文件：
+1. 为 `.card` 卡片加上圆角 (border-radius: 16px) 和悬浮上升效果 (hover 时 transform: translateY(-4px)，带阴影)；
+2. 为整个页面使用更柔和的现代背景色 (#f4f6f8)；
+3. 请不要修改 `index.html` 中的节点和 ID 命名。</code></pre>
+                        <button class="copy-btn" onclick="copyCode(this)">📋 复制 Prompt</button>
+                    </div>
+
+                    <h4>提示词 2：添加深色/浅色模式切换按钮</h4>
+                    <div class="prompt-box">
+                        <pre><code>请在 `index.html` 的 header 中加一个【深色/浅色模式切换按钮】，并在 `script.js` 中添加点击逻辑：
+1. 点击按钮时在 ☀️ 浅色模式 与 🌙 深色模式 之间切换；
+2. 在 `style.css` 中为深色模式定义深蓝色背景 (#0f172a) 与纯白文字 (#ffffff)。</code></pre>
+                        <button class="copy-btn" onclick="copyCode(this)">📋 复制 Prompt</button>
+                    </div>
+
+                    <h4>提示词 3：📱 手机移动端响应式适配</h4>
+                    <div class="prompt-box">
+                        <pre><code>请检查 `style.css`，添加 `@media (max-width: 768px)` 媒体查询：
+当屏幕宽度小于 768px 时，把 `.card-grid` 改为单列布局 (grid-template-columns: 1fr)，确保手机端无横向滚动条。</code></pre>
+                        <button class="copy-btn" onclick="copyCode(this)">📋 复制 Prompt</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: 第3课资料 -->
+            <div id="lesson3" class="tab-content">
+                <div class="resource-card">
+                    <div class="res-header">
+                        <h3>📊 第 3 课：NotebookLM 大纲解析与 Gemini 矢量插画 Prompt</h3>
+                        <span class="badge badge-green">视觉与内容 Prompt</span>
+                    </div>
+
+                    <h4>1. NotebookLM 6 页 PPT 大纲提炼提示词</h4>
+                    <div class="prompt-box">
+                        <pre><code>请分析我上传的项目文档，帮我提取一份 6 页 PPT 大纲。
+要求：
+1. 第 1 页：项目名称与核心痛点（一句话吸引听众）；
+2. 第 2-3 页：核心功能与网页技术亮点；
+3. 第 4-5 页：我与 AI Agent 协作解决问题的过程；
+4. 第 6 页：未来规划与致谢。
+每页只输出【标题】和【3 个精简要点】。</code></pre>
+                        <button class="copy-btn" onclick="copyCode(this)">📋 复制 Prompt</button>
+                    </div>
+
+                    <h4>2. Gemini Nano Banana 风格统一矢量插画 Prompt</h4>
+                    <div class="prompt-box">
+                        <pre><code>极简科技插画风，主题为【一个正在与 AI Agent 共同编写代码的少年】，
+扁平矢量设计，深蓝色与紫色渐变色调，柔和光影，高清，画面中不要出现任何文字，画面右侧留出 40% 的排版空白。</code></pre>
+                        <button class="copy-btn" onclick="copyCode(this)">📋 复制 Prompt</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 4: 第4课资料 -->
+            <div id="lesson4" class="tab-content">
+                <div class="resource-card">
+                    <div class="res-header">
+                        <h3>💬 第 4 课：云端 SSH 与微信 Agent 控制指令</h3>
+                        <span class="badge badge-orange">云端与微信 Prompt</span>
+                    </div>
+
+                    <h4>1. SSH 沙盒连接命令与状态诊断</h4>
+                    <div class="prompt-box">
+                        <pre><code># 在终端中运行登录
+ssh student01@<教师服务器IP> -p 2222
+
+# 查看 Agent 状态
+hermes status</code></pre>
+                        <button class="copy-btn" onclick="copyCode(this)">📋 复制命令</button>
+                    </div>
+
+                    <h4>2. 手机微信给 Hermes 下达的远程任务指令</h4>
+                    <div class="prompt-box">
+                        <pre><code>指令：新增更新日志
+请在 index.html 的卡片列表中，新增一个卡片：
+标题：【微信远程操控上线成功】
+内容：【这是我从手机微信直接发指令给云端 Hermes Agent 完成的修改！】</code></pre>
+                        <button class="copy-btn" onclick="copyCode(this)">📋 复制指令</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 5: 第5课资料 -->
+            <div id="lesson5" class="tab-content">
+                <div class="resource-card">
+                    <div class="res-header">
+                        <h3>🎤 第 5 课：微信一键巡检与 3 分钟 Demo 答辩讲稿结构</h3>
+                        <span class="badge badge-red">答辩与巡检 Prompt</span>
+                    </div>
+
+                    <h4>1. 微信项目一键自动健康巡检指令</h4>
+                    <div class="prompt-box">
+                        <pre><code>指令：巡检项目健康度
+请读取我的 student-project 文件夹，检查 index.html、style.css 和 script.js 是否正常存在，并把巡检报告追加写在 docs/test-report.md 中。</code></pre>
+                        <button class="copy-btn" onclick="copyCode(this)">📋 复制指令</button>
+                    </div>
+
+                    <div class="speech-guide">
+                        <h4>🎤 3 分钟 Demo Day 黄金答辩话术结构：</h4>
+                        <ol>
+                            <li><strong>[00:00 - 00:30] 自我介绍与主题</strong>：介绍我是谁，我的项目解决什么痛点；</li>
+                            <li><strong>[00:30 - 01:30] 网页作品演示</strong>：展示个人网站的现代视觉、深色模式与移动端适配；</li>
+                            <li><strong>[01:30 - 02:30] 微信控 Agent 现场秀</strong>：现场用手机微信发指令，给云端网站加新内容；</li>
+                            <li><strong>[02:30 - 03:00] 工程思维总结</strong>：阐述人机协作的边界与安全防线感悟。</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 初始脚手架模版查看器 -->
+    <section id="template" class="section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🛠️ 课堂初始脚手架 (student-project-template)</h2>
+                <p class="section-desc">学生开课时直接复制使用的标准化模版代码</p>
+            </div>
+
+            <div class="code-inspector">
+                <div class="file-tree">
+                    <h4>📁 模版文件目录</h4>
+                    <ul>
+                        <li class="active" onclick="switchCodeFile('index.html')">📄 index.html</li>
+                        <li onclick="switchCodeFile('style.css')">🎨 style.css</li>
+                        <li onclick="switchCodeFile('script.js')">⚡ script.js</li>
+                        <li onclick="switchCodeFile('AGENTS.md')">🛡️ AGENTS.md</li>
+                        <li onclick="switchCodeFile('README.md')">📝 README.md</li>
+                    </ul>
+                </div>
+                <div class="code-display">
+                    <div class="code-header">
+                        <span id="currentFileName">index.html</span>
+                        <button class="copy-btn" onclick="copyCodeDisplay()">📋 复制模版内容</button>
+                    </div>
+                    <pre><code id="codeViewer"></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 AI Agent 青少年实战训练营 | 基于 Google Antigravity & Hermes Agent 架构打造</p>
+            <p class="sub-text">做真正的 AI 首席指挥官 🚀</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
